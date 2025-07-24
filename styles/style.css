@@ -51,6 +51,9 @@ header {
   align-items: center;
   gap: 7px;
 }
+i.cart-icon.ri-shopping-cart-2-line {
+  font-size: 1.5rem;
+}
 ul li a {
   text-decoration: none;
   color: rgba(137, 135, 161, 1);
@@ -105,6 +108,7 @@ h1.banner-title-2 {
 section.plant {
   margin-top: 120px;
 }
+
 span.our {
   color: #e95a08;
   /* font-size: 3rem; */
@@ -168,6 +172,55 @@ span.price {
   margin-bottom: 30px;
   font-family: "Inter";
 }
+
+/* Plant-lover-Section */
+
+.lover-section {
+  display: flex;
+  gap: 20px;
+  margin-top: 210px;
+}
+
+.lover-img {
+  position: relative;
+}
+.lover-section-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.trusted-badge {
+  width: 286px;
+  height: 286px;
+  position: absolute;
+  top: -142px;
+  right: -86px;
+  /* animation: spin 3s linear infinite; */
+}
+h2.love-title {
+  font-family: "Noto Serif";
+  font-size: 3.125rem;
+}
+.list-content {
+  margin-top: 20px;
+}
+.list-des {
+  padding: 0 38px;
+}
+.list-des {
+  padding: 0 38px;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Inter";
+  font-size: 1.37rem;
+}
+@keyframes spin {
+  /* 100% {
+    transform: rotate(360deg);
+  } */
+}
+
 /* Media Query */
 @media only screen and (max-width: 393px) {
   header {
@@ -234,5 +287,31 @@ span.price {
   p.flower-name,
   span.price {
     font-size: 1rem;
+  }
+
+  /* love-section */
+  .lover-section {
+    margin-top: 41.5px;
+  }
+  .lover-section-container {
+    flex-direction: column;
+  }
+  .lover-img img {
+    width: 361px;
+    margin: 0 auto;
+  }
+  .trusted-badge {
+    display: none;
+  }
+  .lover-content {
+    padding: 0 20px;
+    gap: 20px;
+  }
+  h2.love-title {
+    font-family: "Noto Serif";
+    font-size: 1.5rem;
+  }
+  .list-des {
+    font-size: 0.9rem;
   }
 }
