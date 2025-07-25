@@ -303,15 +303,32 @@ p.deal-section-des {
 }
 
 .overlay-title {
-  font-size: 24px;
+  font-family: "Noto Serif";
+  font-size: 1.25rem;
   font-weight: bold;
   margin: 0;
 }
 
 .overlay-subtitle {
-  font-size: 16px;
+  font-family: "Inter";
+  font-size: 1rem;
   margin-top: 8px;
+  text-decoration: underline;
+  font-weight: 500;
 }
+.overlay-title-right {
+  font-family: "Noto Serif";
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.overlay-subtitle-right {
+  font-family: "Inter";
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-top: 8px;
+  text-decoration: underline;
+}
+
 /* subscribe-section */
 .subscribe-section {
   background-image: url("../assets/news-letter-bg.png");
@@ -333,14 +350,14 @@ p.deal-section-des {
 }
 
 .subscribe-content h2 {
-  font-size: 2rem;
-  margin-bottom: 30px;
+  font-family: "Noto Serif";
+  font-size: 3.125rem;
+  margin-bottom: 23px;
   font-weight: bold;
 }
 
 .subscribe-form {
   display: flex;
-  border-radius: 4px;
   overflow: hidden;
 }
 
@@ -478,6 +495,14 @@ p.deal-section-des {
     width: 100%;
     height: auto;
   }
+  h2.latest-title {
+    font-size: 1.5rem;
+  }
+  p.deal-section-des {
+    width: 336px;
+    font-size: 0.9rem;
+    padding-bottom: 28px;
+  }
   /* latest-deal-overlay */
   .overlay-title {
     font-size: 18px;
@@ -485,18 +510,37 @@ p.deal-section-des {
   .overlay-subtitle {
     font-size: 14px;
   }
-  /* subscribe-form-section */
-  .subscribe-form {
-    flex-direction: column;
+  #overlay-radious {
+    border-radius: 0;
   }
+  .overlay-title,
+  .overlay-title-right {
+    font-size: 1.25rem;
+  }
+  .overlay-subtitle,
+  .overlay-subtitle-right {
+    font-size: 1rem;
+  }
+  /* subscribe-form-section */
 
   .subscribe-form input,
   .subscribe-form button {
-    width: 100%;
+    width: 50%;
     border-radius: 0;
   }
 
   .subscribe-form button {
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    width: 103px;
+  }
+  .subscribe-section {
+    margin-top: 40px;
+  }
+  .subscribe-content h2 {
+    font-size: 1.25rem;
+  }
+  .subscribe-form button {
+    padding: 12px 12px;
+    font-size: 1rem;
   }
 }
