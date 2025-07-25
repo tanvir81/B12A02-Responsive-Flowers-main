@@ -497,6 +497,7 @@ img#twitter-icon {
   }
   /* Plant-section */
   h2.plant-section-title {
+    margin-top: -50px;
     font-size: 1.5rem;
   }
   p.plant-section-des {
@@ -537,6 +538,7 @@ img#twitter-icon {
   }
   .list-des {
     font-size: 0.9rem;
+    padding: 20px;
   }
   /* latest Deal */
   .image-grid {
